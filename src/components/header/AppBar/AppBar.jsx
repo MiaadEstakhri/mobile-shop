@@ -16,7 +16,10 @@ const AppBar = () => {
         <img src={Logo} alt="Logo" />
       </div>
       <div className="text-lg font-bold text-slate-800">ساعت هوشمند</div>
-      <div onClick={clickShowHandler} className="w-7 h-7 bg-stone-50 flex items-center justify-center rounded shadow-lg mx-1">
+      <div
+        onClick={clickShowHandler}
+        className="w-7 h-7 bg-stone-50 flex items-center justify-center rounded shadow-lg mx-1 relative z-10"
+      >
         <TfiSearch className="w-5 h-5 stroke-slate-800" />
       </div>
       <div className={`${isOpen ? "" : "hidden"}`}>
@@ -28,6 +31,7 @@ const AppBar = () => {
           />
         </form>
       </div>
+      <div className="fixed inset-0" onClick={()=>setIsOpen(false)}></div>
     </section>
   );
 };
