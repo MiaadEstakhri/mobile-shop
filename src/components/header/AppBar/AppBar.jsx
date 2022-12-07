@@ -16,15 +16,15 @@ const AppBar = () => {
         <img src={Logo} alt="Logo" />
       </div>
       <div className="text-lg font-bold text-slate-800">ساعت هوشمند</div>
-      <div onClick={clickShowHandler} className="w-8 h-8 bg-stone-50 flex items-center justify-center rounded shadow-lg">
-        <TfiSearch className="w-6 h-6 stroke-slate-800" />
+      <div onClick={clickShowHandler} className="w-7 h-7 bg-stone-50 flex items-center justify-center rounded shadow-lg mx-1">
+        <TfiSearch className="w-5 h-5 stroke-slate-800" />
       </div>
       <div className={`${isOpen ? "" : "hidden"}`}>
         <form className="flex justify-center items-center bg-gray-100 rounded-lg ">
           <input
             type="text"
-            className="w-full bg-gray-100 text-slate-800 stroke-none outline-none placeholder:text-gray-300"
-            placeholder="جستجوی نام محصول،نام برند،نام مدل و..."
+            className="w-full bg-gray-100 text-slate-800 stroke-none outline-none placeholder:text-gray-300 px-2"
+            placeholder="جستجوی نام محصول و..."
           />
         </form>
       </div>
