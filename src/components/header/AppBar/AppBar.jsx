@@ -31,7 +31,7 @@ const AppBar = () => {
           />
         </form>
       </div>
-      <div className="fixed inset-0" onClick={()=>setIsOpen(false)}></div>
+      <div className="fixed inset-0" onClick={() => setIsOpen(false)}></div>
     </section>
   );
 };

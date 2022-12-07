@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <AppBar/>
+        <AppBar />
         <Navigation />
       </nav>
     </header>
