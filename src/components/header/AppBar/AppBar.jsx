@@ -1,9 +1,9 @@
-import Logo from "../assets/images/logo/Logo.png";
+import Logo from "../../../assets/images/logo/Logo.png";
 import { TfiSearch } from "react-icons/tfi";
 
 const AppBar = () => {
   return (
-    <section className="flex items-center justify-between px-4 pt-11 pb-6">
+    <section className="flex items-center justify-between px-4 pt-11 pb-6 md:hidden">
       <div className="">
         <img src={Logo} alt="Logo" />
       </div>
