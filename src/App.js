@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import SortMobile from "./components/Filter/SortMobile";
 import HomePage from "./pages/HomePage";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
+        <SortMobile/>
     </div>
   );
 }

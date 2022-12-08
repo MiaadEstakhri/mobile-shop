@@ -11,7 +11,7 @@ const AppBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <section className="flex items-center justify-between px-4 pt-11 pb-6 relative bg-gray-50 md:hidden ">
+    <section className="flex items-center justify-between px-4 pt-11 pb-6 relative  md:hidden ">
       <div className="">
         <img src={Logo} alt="Logo" />
       </div>
