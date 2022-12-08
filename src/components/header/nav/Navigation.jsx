@@ -1,5 +1,6 @@
 import Logo from "../../../assets/images/logo/Logo (1).png";
 import { TfiSearch } from "react-icons/tfi";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -9,7 +10,9 @@ const Navigation = () => {
           <li className="">
             <img src={Logo} alt="Logo" />
           </li>
-          <li className="font-bold text-slate-800 ">خانه</li>
+          <li className="font-bold text-slate-800 ">
+            <Link to="/">خانه</Link>
+          </li>
           <li className="text-slate-800 ">تلفن همراه</li>
           <li className="text-slate-800 ">لپتاپ</li>
           <li className="text-slate-800 ">ساعت هوشمند</li>

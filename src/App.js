@@ -1,10 +1,13 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Header from "./components/header/Header";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <div className="bg-gray-100 ">
-      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </div>
   );
 }

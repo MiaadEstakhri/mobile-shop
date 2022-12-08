@@ -11,7 +11,7 @@ const AppBar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <section className="flex items-center justify-between px-4 pt-11 pb-6 relative md:hidden">
+    <section className="flex items-center justify-between px-4 pt-11 pb-6 relative bg-gray-50 md:hidden ">
       <div className="">
         <img src={Logo} alt="Logo" />
       </div>
@@ -22,8 +22,8 @@ const AppBar = () => {
       >
         <TfiSearch className="w-5 h-5 stroke-slate-800" />
       </div>
-      <div className={`${isOpen ? "" : "hidden"}`}>
-        <form className="flex justify-center items-center bg-gray-100 rounded-lg ">
+      <div className={`w-full z-10 ${isOpen ? "" : "hidden"}`}>
+        <form className="w-full bg-gray-100 rounded-lg ">
           <input
             type="text"
             className="w-full bg-gray-100 text-slate-800 stroke-none outline-none placeholder:text-gray-300 px-2"
